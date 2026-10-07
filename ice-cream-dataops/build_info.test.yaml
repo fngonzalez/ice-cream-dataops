@@ -106,125 +106,6 @@ modules:
     warning_count: 0
     status: Success
     iteration: 1
-  - name: oee
-    location:
-      path: modules/bootcamp/use_cases/oee
-      hash: def13d05
-    build_variables:
-    - key: modules
-      value: null
-      is_selected: true
-      location: .
-    - key: bootcamp
-      value: null
-      is_selected: true
-      location: .
-    - key: icapi_ds_external_id
-      value: ds_icapi
-      is_selected: true
-      location: .
-    - key: icapi_space_name
-      value: icapi_dm_space
-      is_selected: true
-      location: .
-    - key: data_foundation
-      value: null
-      is_selected: true
-      location: .
-    - key: data_developer_source_id
-      value: ${DATA_DEVELOPER_SOURCE_ID}
-      is_selected: true
-      location: .
-    - key: ice_cream_api
-      value: null
-      is_selected: true
-      location: .
-    - key: icapi_extractors_source_id
-      value: ${ICAPI_EXTRACTORS_SOURCE_ID}
-      is_selected: true
-      location: .
-    - key: tokenUri
-      value: ${IDP_TOKEN_URL}
-      is_selected: true
-      location: .
-    - key: cdfProjectName
-      value: ${CDF_PROJECT}
-      is_selected: true
-      location: .
-    - key: scopes
-      value: ${IDP_SCOPES}
-      is_selected: true
-      location: .
-    - key: icapi_trigger_client_id
-      value: ${ICAPI_EXTRACTORS_CLIENT_ID}
-      is_selected: true
-      location: .
-    - key: icapi_trigger_client_secret
-      value: ${ICAPI_EXTRACTORS_CLIENT_SECRET}
-      is_selected: true
-      location: .
-    - key: icapi_extractors_client_id
-      value: ${ICAPI_EXTRACTORS_CLIENT_ID}
-      is_selected: true
-      location: .
-    - key: icapi_extractors_client_secret
-      value: ${ICAPI_EXTRACTORS_CLIENT_SECRET}
-      is_selected: true
-      location: .
-    - key: use_cases
-      value: null
-      is_selected: true
-      location: .
-    - key: oee
-      value: null
-      is_selected: true
-      location: .
-    - key: data_pipeline_oee_source_id
-      value: ${DATA_PIPELINE_OEE_SOURCE_ID}
-      is_selected: true
-      location: .
-    - key: uc_oee_ds_external_id
-      value: ds_uc_oee
-      is_selected: true
-      location: .
-    - key: oee_space_name
-      value: oee_ts_space
-      is_selected: true
-      location: .
-    - key: data_pipeline_oee_client_id
-      value: ${DATA_PIPELINE_OEE_CLIENT_ID}
-      is_selected: true
-      location: .
-    - key: data_pipeline_oee_client_secret
-      value: ${DATA_PIPELINE_OEE_CLIENT_SECRET}
-      is_selected: true
-      location: .
-    resources:
-      data_models:
-      - identifier:
-          space: oee_ts_space
-        source:
-          path: /workspaces/ice-cream-dataops/ice-cream-dataops/modules/bootcamp/use_cases/oee/data_models/oee_timeseries.space.yaml
-          hash: 4424ed7c
-        kind: Space
-      auth:
-      - identifier:
-          name: data_pipeline_oee
-        source:
-          path: /workspaces/ice-cream-dataops/ice-cream-dataops/modules/bootcamp/use_cases/oee/auth/data_pipeline_oee.Group.yaml
-          hash: c3b48e03
-        kind: Group
-      data_sets:
-      - identifier:
-          externalId: ds_uc_oee
-        source:
-          path: /workspaces/ice-cream-dataops/ice-cream-dataops/modules/bootcamp/use_cases/oee/data_sets/data_sets.DataSet.yaml
-          hash: 21e539c8
-        kind: DataSet
-      functions: []
-    warning_count: 0
-    status: Success
-    iteration: 1
   - name: ice_cream_api
     location:
       path: modules/bootcamp/ice_cream_api
@@ -458,5 +339,137 @@ modules:
           hash: 715fa105
         kind: Schedule
     warning_count: 2
+    status: Success
+    iteration: 1
+  - name: oee
+    location:
+      path: modules/bootcamp/use_cases/oee
+      hash: 6c6e031e
+    build_variables:
+    - key: modules
+      value: null
+      is_selected: true
+      location: .
+    - key: bootcamp
+      value: null
+      is_selected: true
+      location: .
+    - key: icapi_ds_external_id
+      value: ds_icapi
+      is_selected: true
+      location: .
+    - key: icapi_space_name
+      value: icapi_dm_space
+      is_selected: true
+      location: .
+    - key: data_foundation
+      value: null
+      is_selected: true
+      location: .
+    - key: data_developer_source_id
+      value: ${DATA_DEVELOPER_SOURCE_ID}
+      is_selected: true
+      location: .
+    - key: ice_cream_api
+      value: null
+      is_selected: true
+      location: .
+    - key: icapi_extractors_source_id
+      value: ${ICAPI_EXTRACTORS_SOURCE_ID}
+      is_selected: true
+      location: .
+    - key: tokenUri
+      value: ${IDP_TOKEN_URL}
+      is_selected: true
+      location: .
+    - key: cdfProjectName
+      value: ${CDF_PROJECT}
+      is_selected: true
+      location: .
+    - key: scopes
+      value: ${IDP_SCOPES}
+      is_selected: true
+      location: .
+    - key: icapi_trigger_client_id
+      value: ${ICAPI_EXTRACTORS_CLIENT_ID}
+      is_selected: true
+      location: .
+    - key: icapi_trigger_client_secret
+      value: ${ICAPI_EXTRACTORS_CLIENT_SECRET}
+      is_selected: true
+      location: .
+    - key: icapi_extractors_client_id
+      value: ${ICAPI_EXTRACTORS_CLIENT_ID}
+      is_selected: true
+      location: .
+    - key: icapi_extractors_client_secret
+      value: ${ICAPI_EXTRACTORS_CLIENT_SECRET}
+      is_selected: true
+      location: .
+    - key: use_cases
+      value: null
+      is_selected: true
+      location: .
+    - key: oee
+      value: null
+      is_selected: true
+      location: .
+    - key: data_pipeline_oee_source_id
+      value: ${DATA_PIPELINE_OEE_SOURCE_ID}
+      is_selected: true
+      location: .
+    - key: uc_oee_ds_external_id
+      value: ds_uc_oee
+      is_selected: true
+      location: .
+    - key: oee_space_name
+      value: oee_ts_space
+      is_selected: true
+      location: .
+    - key: data_pipeline_oee_client_id
+      value: ${DATA_PIPELINE_OEE_CLIENT_ID}
+      is_selected: true
+      location: .
+    - key: data_pipeline_oee_client_secret
+      value: ${DATA_PIPELINE_OEE_CLIENT_SECRET}
+      is_selected: true
+      location: .
+    resources:
+      data_models:
+      - identifier:
+          space: oee_ts_space
+        source:
+          path: /workspaces/ice-cream-dataops/ice-cream-dataops/modules/bootcamp/use_cases/oee/data_models/oee_timeseries.space.yaml
+          hash: 4424ed7c
+        kind: Space
+      auth:
+      - identifier:
+          name: data_pipeline_oee
+        source:
+          path: /workspaces/ice-cream-dataops/ice-cream-dataops/modules/bootcamp/use_cases/oee/auth/data_pipeline_oee.Group.yaml
+          hash: c3b48e03
+        kind: Group
+      data_sets:
+      - identifier:
+          externalId: ds_uc_oee
+        source:
+          path: /workspaces/ice-cream-dataops/ice-cream-dataops/modules/bootcamp/use_cases/oee/data_sets/data_sets.DataSet.yaml
+          hash: 21e539c8
+        kind: DataSet
+      functions:
+      - identifier:
+          externalId: oee_timeseries
+        source:
+          path: /workspaces/ice-cream-dataops/ice-cream-dataops/modules/bootcamp/use_cases/oee/functions/functions.Function.yaml
+          hash: b4795e39
+        kind: Function
+      - identifier:
+          functionExternalId: oee_timeseries
+          name: Run calculations every 5 minutes for last hour of data
+        source:
+          path: /workspaces/ice-cream-dataops/ice-cream-dataops/modules/bootcamp/use_cases/oee/functions/schedules.Schedule.yaml
+          hash: 0cc26f4c
+        kind: Schedule
+    warning_count: 0
     status: Success
     iteration: 1
