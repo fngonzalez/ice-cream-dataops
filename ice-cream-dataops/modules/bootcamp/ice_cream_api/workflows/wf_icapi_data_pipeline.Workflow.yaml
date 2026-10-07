@@ -1,3 +1,2 @@
-externalId: wf_my_workflow
-description: A workflow for processing data
-dataSetExternalId: ds_workflow_data
+externalId: wf_icapi_data_pipeline
+description: A workflow for processing data for Ice Cream API
